@@ -1,0 +1,2 @@
+backend
+npm i bcrypt cors dotenv express jsonwebtoken mongoose multer
