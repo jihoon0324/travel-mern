@@ -1,2 +1,7 @@
 backend
 npm i bcrypt cors dotenv express jsonwebtoken mongoose multer
+
+
+client
+
+ npm i react-icons react-redux react-router-dom redux persist @reduxjs/toolkit
