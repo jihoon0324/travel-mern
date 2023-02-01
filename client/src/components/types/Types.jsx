@@ -1,33 +1,33 @@
 import React from "react";
 import classes from "./types.module.css";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { typeData } from "../../data/data";
+// import { typeData } from "../../data/data";
 import { useState } from "react";
 import { useEffect } from "react";
 import img from "../../assets/img2.jpg";
 
 const Types = () => {
   const [types, setTypes] = useState([]);
-  const { token } = useSelector((state) => state.auth);
+  // const { token } = useSelector((state) => state.auth);
 
   // useEffect(() => {
-  //   const fetchTypes = async() => {
+  //   const fetchTypes = async () => {
   //     try {
   //       const res = await fetch(`http://localhost:5000/room/find/types`, {
   //         headers: {
-  //           'Authorization': `Bearer ${token}`
-  //         }
-  //       })
-  //       const types = await res.json()
-  //       console.log(types)
-  //       setTypes(types)
+  //           Authorization: `Bearer ${token}`,
+  //         },
+  //       });
+  //       const types = await res.json();
+  //       console.log(types);
+  //       setTypes(types);
   //     } catch (error) {
-  //       console.error(error)
+  //       console.error(error);
   //     }
-  //   }
-  //   fetchTypes()
-  // }, [])
+  //   };
+  //   fetchTypes();
+  // }, []);
 
   return (
     <section id="services" className={classes.container}>
