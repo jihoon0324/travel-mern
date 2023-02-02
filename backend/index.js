@@ -1,9 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const authController = require("./controllers/authController");
 const dotenv = require("dotenv").config();
 const app = express();
-// app.use(cors());
+app.use(cors());
 //connect db
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONGO_URL, () => console.log("Db is connected"));
