@@ -11,23 +11,23 @@ const Types = () => {
   const [types, setTypes] = useState([]);
   // const { token } = useSelector((state) => state.auth);
 
-  // useEffect(() => {
-  //   const fetchTypes = async () => {
-  //     try {
-  //       const res = await fetch(`http://localhost:5000/room/find/types`, {
-  //         headers: {
-  //           Authorization: `Bearer ${token}`,
-  //         },
-  //       });
-  //       const types = await res.json();
-  //       console.log(types);
-  //       setTypes(types);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-  //   fetchTypes();
-  // }, []);
+  useEffect(() => {
+    const fetchTypes = async () => {
+      try {
+        const res = await fetch(`http://localhost:5000/room/find/types`, {
+          headers: {
+            // Authorization: `Bearer ${token}`,
+          },
+        });
+        const types = await res.json();
+        console.log(types);
+        setTypes(types);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchTypes();
+  }, []);
 
   return (
     <section id="services" className={classes.container}>
