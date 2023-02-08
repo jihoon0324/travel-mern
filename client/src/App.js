@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import Create from "./components/create/Create";
 
 function App() {
-  // const { user } = useSelector((state) => state.auth);
+  const { user } = useSelector((state) => state.auth);
 
   return (
     <div>
